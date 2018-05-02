@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_02_164715) do
+ActiveRecord::Schema.define(version: 2018_05_02_200439) do
 
   create_table "hints_tables", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "like_person_or_not"
@@ -26,6 +26,12 @@ ActiveRecord::Schema.define(version: 2018_05_02_164715) do
   create_table "secret_hints", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "like_person_initial"
+    t.text "class"
+    t.integer "familiar_or_not"
+    t.integer "like_or_not"
+    t.text "like_person_nickname"
+    t.text "oppotunity_of_meeting"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
