@@ -1,0 +1,2 @@
+class HintsTable < ApplicationRecord
+end
